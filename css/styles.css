@@ -1,0 +1,207 @@
+/* ====== RESET BÁSICO ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== ESTILO GENERAL DEL CUERPO ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====== LOGO ====== */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* ====== ENCABEZADOS ====== */
+h1, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1a0216;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #b61b9c;
+}
+
+h1.titulo-principal {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3.subtitulo {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    color: #000000;
+}
+
+h3.subtitulo-secundario {
+    font-size: 1.1rem;
+    color: #800e6d;
+    margin-bottom: 10px;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background-color: #a15795;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #e0d216;
+}
+
+/* ====== CONTENEDOR AUTOMÁTICO PARA TODO ====== */
+body > h3,
+body > h4,
+body > ul,
+body > div,
+body > form,
+body > p,
+body > section {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
+}
+
+/* ====== TEXTOS GENERALES ====== */
+p, li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* ====== LISTAS ====== */
+.lista-materias´{
+body > ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+/* ====== SECCIONES DE AÑOS EN ASIGNATURAS ====== */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ====== FORMULARIOS Y CAMPOS ====== */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #a15795;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:#b61b9c;
+}
+
+/* ====== CAJA DE TEXTO EN INDEX ====== */
+.texto-caja {
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 600px) {
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    body > h3,
+    body > h4,
+    body > ul,
+    body > div,
+    body > form,
+    body > section {
+        padding: 0 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+.banner {
+    width: 0%; /* o un valor específico como 800px */
+    height: auto; /* mantiene la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+    object-fit: cover; /* ajusta el contenido si se usa con height fijo */
+  }
+  
+
+
