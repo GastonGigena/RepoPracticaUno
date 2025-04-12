@@ -62,7 +62,7 @@ h4 {
 
 .nav-links li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 
 .nav-links a {
@@ -72,7 +72,6 @@ h4 {
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
     color: #e0d216;
 }
 
