@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* ====== ESTILO GENERAL DEL CUERPO ====== */
+/* ESTILO GENERAL DEL CUERPO*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
@@ -13,14 +13,14 @@ body {
     line-height: 1.6;
 }
 
-/* ====== IMAGEN LOGO ====== */
+/*IMAGEN LOGO */
 img {
     display: block;
     margin: 20px auto;
     width: 300px;
 }
 
-/* ====== ENCABEZADOS ====== */
+/* TITULOS*/
 h1, h3, h4 {
     text-align: center;
     margin-bottom: 15px;
@@ -46,7 +46,7 @@ h4 {
     color: #b61b9c;
 }
 
-/* ====== NAVBAR ====== */
+/*BARRA DE NAVEGACION*/
 .navbar {
     background-color: #a15795;
     padding: 10px 0;
@@ -76,7 +76,7 @@ h4 {
     color: #e0d216;
 }
 
-/* ====== CONTENEDORES PRINCIPALES ====== */
+/*CONTENEDORES*/
 body > h3,
 body > h4,
 body > ul,
@@ -90,13 +90,13 @@ body > section {
     padding: 0 15px;
 }
 
-/* ====== TEXTOS GENERALES ====== */
+/*TEXTOS GENERALES*/
 p, li {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-/* ====== CAJA DE TEXTO EN INDEX ====== */
+/*CAJA DE TEXTO EN INDEX*/
 .texto-caja {
     background-color: #ecf0f1;
     border-left: 5px solid #b61b9c;
@@ -104,7 +104,7 @@ p, li {
     border-radius: 5px;
 }
 
-/* ====== BANNER ====== */
+/*BANNER INDEX */
 .banner img {
     display: block;
     width: 100%;
@@ -116,7 +116,7 @@ p, li {
     object-fit: cover;
 }
 
-/* ====== FORMULARIOS ====== */
+/*FORMULARIOS*/
 form {
     background-color: #ffffff;
     padding: 25px;
@@ -181,7 +181,7 @@ form input[type="submit"]:hover {
     background-color: #b61b9c;
 }
 
-/* ====== LOGIN CONTAINER ====== */
+/*LOGIN CONTAINER*/
 .login-container {
     background-color: #ffffff;
     padding: 30px;
@@ -197,7 +197,7 @@ form input[type="submit"]:hover {
     color: #a15795;
 }
 
-/* ====== TABLAS (Asignaturas) ====== */
+/* TABLAS ASIGNSTURAS*/
 table {
     width: 90%;
     margin: 20px auto;
@@ -223,7 +223,7 @@ table tr:hover {
     background-color: #f2f2f2;
 }
 
-/* ====== SECCIONES DE ASIGNATURAS ====== */
+/*SECCIONES DE ASIGNATURAS*/
 section {
     background-color: #ffffff;
     padding: 20px;
@@ -232,7 +232,7 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* ====== RESPONSIVE ====== */
+/* RESPONSIVE*/
 @media (max-width: 600px) {
     .nav-links li {
         display: block;
