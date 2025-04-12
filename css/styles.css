@@ -1,5 +1,7 @@
 h1{
     color:rgb(106, 68, 12);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
     
 }
 
@@ -14,3 +16,23 @@ p{
 #segundoparrafo{
     color: rgb(5, 57, 58);
 }
+
+.navegacion{
+    color: rgb(230, 19, 139);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 100px;;
+    padding: 10px;
+
+
+}
+
+.caja{
+    border: 5px solid black;
+    margin: 30px;
+    padding: 10px;
+
+}
+ .contenido{
+    border: 5px solid black;
+ }
