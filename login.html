@@ -10,9 +10,11 @@
 </head>
 
 <body>
-    <img src="imagenes/bannerarriba.jpg" alt="LogoITSC">
+    <header>
+        <img src="imagenes/bannerarriba.jpg" alt="LogoITSC">
 
-    <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
+        <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
+    </header>
 
     <nav class="navbar">
         <ul class="nav-links">
@@ -23,28 +25,32 @@
             <li><a href="form.html">Formulario</a></li>
         </ul>
     </nav>
+    <main>
 
-    <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
+        <section>
 
-    <h3 class="subtitulo-secundario">Iniciar Sesión</h3>
+            <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
 
-    <form action="procesar_login.html" method="post">
-        <div>
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
-        </div>
+            <h3 class="subtitulo-secundario">Iniciar Sesión</h3>
 
-        <div>
-            <label for="contrasena">Contraseña:</label>
-            <input type="password" id="contrasena" name="contrasena" required>
-        </div>
+            <form action="procesar_login.html" method="post">
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
 
-        <div>
-            <button type="submit">Ingresar</button>
-        </div>
-    </form>
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
 
-    </section>
+                <div>
+                    <button type="submit">Ingresar</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
 
 
     <footer>

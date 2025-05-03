@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* ESTILO GENERAL DEL CUERPO*/
+/* ESTILO GENERAL DEL CUERPO */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
@@ -13,8 +13,16 @@ body {
     line-height: 1.6;
 }
 
-/*IMAGEN LOGO */
-img {
+/* ESTILOS COMUNES PARA CONTENEDORES SEMÁNTICOS */
+header, main, section, footer, nav, .contenido-pagina {
+    width: 90%;
+    max-width: 860px;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
+}
+
+/* IMAGEN LOGO */
+header img {
     display: block;
     margin: auto;
     width: 100%;
@@ -22,18 +30,19 @@ img {
     border-radius: 10px;
 }
 
-/* TITULOS*/
+/* TITULOS GENERALES */
 h1, h3, h4 {
     text-align: center;
     margin-bottom: 15px;
-    
 }
 
+/* TÍTULO PRINCIPAL */
 h1.titulo-principal {
     font-size: 2rem;
     color: #1a0216;
 }
 
+/* SUBTÍTULOS */
 h3.subtitulo {
     font-size: 1.2rem;
     margin-top: 25px;
@@ -45,11 +54,12 @@ h3.subtitulo-secundario {
     color: #800e6d;
 }
 
+/* TITULO SECUNDARIO */
 h4 {
     color: #b61b9c;
 }
 
-/*BARRA DE NAVEGACION*/
+/* BARRA DE NAVEGACIÓN */
 .navbar {
     background-color: #a15795;
     padding: 10px 0;
@@ -78,27 +88,13 @@ h4 {
     color: #e0d216;
 }
 
-/*CONTENEDORES*/
-body > h3,
-body > h4,
-body > ul,
-body > div,
-body > form,
-body > p,
-body > section {
-    width: 90%;
-    max-width: 860px;
-    margin: 0 auto 25px auto;
-    padding: 0 15px;
-}
-
-/*TEXTOS GENERALES*/
+/* TEXTOS GENERALES */
 p, li {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-/*CAJA DE TEXTO EN INDEX*/
+/* CAJA DE TEXTO EN INDEX */
 .texto-caja {
     background-color: #ebd5e7;
     border-left: 5px solid #b61b9c;
@@ -106,8 +102,8 @@ p, li {
     border-radius: 5px;
 }
 
-/*BANNER INDEX */
-.banner img {
+/* BANNER FOOTER */
+footer .banner img {
     display: block;
     width: 100%;
     max-width: 860px;
@@ -118,7 +114,7 @@ p, li {
     object-fit: cover;
 }
 
-/*FORMULARIOS*/
+/* FORMULARIOS */
 form {
     background-color: #ffffff;
     padding: 25px;
@@ -184,7 +180,7 @@ form input[type="submit"]:hover {
     background-color: #b61b9c;
 }
 
-/*LOGIN CONTAINER*/
+/* LOGIN CONTAINER */
 .login-container {
     background-color: #ffffff;
     padding: 30px;
@@ -200,7 +196,7 @@ form input[type="submit"]:hover {
     color: #a15795;
 }
 
-/* TABLAS ASIGNSTURAS*/
+/* TABLAS */
 table {
     width: 90%;
     margin: 20px auto;
@@ -226,36 +222,35 @@ table tr:hover {
     background-color: #f2f2f2;
 }
 
-/*SECCIONES DE ASIGNATURAS*/
+/* SECCIONES GENERALES */
 section {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+
+    max-width: 860px;
+    margin: 0 auto 25px auto;
 }
 
-/* RESPONSIVE*/
+/* SECCIONES DE LISTA (por ejemplo, asignaturas) */
+section ul {
+    padding-left: 30px;
+    list-style-position: outside;
+}
+
+/* RESPONSIVE */
 @media (max-width: 860px) {
     .nav-links li {
         display: block;
         margin: 10px 0;
-
     }
 
-    body > h3,
-    body > h4,
-    body > ul,
-    body > div,
-    body > form,
-    body > section {
+    header, main, section, footer, nav, .contenido-pagina {
         padding: 0 10px;
     }
 
-    form {
-        padding: 20px;
-    }
-
-    .login-container {
+    form, .login-container {
         padding: 20px;
     }
 }
