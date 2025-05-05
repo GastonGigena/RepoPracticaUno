@@ -19,10 +19,13 @@
         <ul class="nav-links">
             <li><a href="Contactos.html">Contactos</a></li>
             <li><a href="alcance_titulo.html">Alcance de título</a></li>
-            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="asignaturas.html">Asignaturas</a></li>
             <li><a href="form.html">Formulario</a></li>
         </ul>
     </nav>
+    <div class="contenedor-login-boton">
+        <button onclick="abrirLogin()" class="boton-login">Iniciar sesión</button>
+    </div>
     <main>
         <section>
             <div class="contenido-pagina">
@@ -67,6 +70,15 @@
     </footer>
 
 
+    <script>
+        function abrirLogin() {
+            window.open(
+                'login.html',
+                'Login',
+                'width=500,height=600,left=100,top=100,resizable=yes,scrollbars=yes'
+            );
+        }
+    </script>
 
 
 </body>

@@ -255,3 +255,25 @@ section ul {
         padding: 20px;
     }
 }
+
+
+.contenedor-login-boton {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.boton-login {
+    display: inline-block;
+    background-color: #a15795;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-login:hover {
+    background-color: #b61b9c;
+}
+

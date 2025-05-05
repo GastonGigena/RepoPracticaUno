@@ -10,23 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <img src="imagenes/bannerarriba.jpg" alt="LogoITSC">
-
-        <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
-    </header>
-
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Contactos.html">Contactos</a></li>
-            <li><a href="alcance_titulo.html">Alcance de título</a></li>
-            <li><a href="asignaturas.html">Asignaturas</a></li>
-            <li><a href="form.html">Formulario</a></li>
-        </ul>
-    </nav>
     <main>
-
         <section>
 
             <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
@@ -51,14 +35,16 @@
 
         </section>
     </main>
-
-
-    <footer>
-        <div class="banner">
-            <img src="imagenes/banner.jpg" alt="imagen banner">
-        </div>
-    </footer>
-
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+          e.preventDefault(); // evita el envío real si no hay backend
+      
+          // Aquí iría la validación (falsa para este ejemplo)
+          // Suponiendo que el login es correcto:
+          window.opener.location.href = "index.html"; // redirige la ventana principal
+          window.close(); // cierra el popup
+        });
+      </script>
 </body>
 
 </html>
