@@ -240,21 +240,7 @@ section ul {
     list-style-position: outside;
 }
 
-/* RESPONSIVE */
-@media (max-width: 860px) {
-    .nav-links li {
-        display: block;
-        margin: 10px 0;
-    }
 
-    header, main, section, footer, nav, .contenido-pagina {
-        padding: 0 10px;
-    }
-
-    form, .login-container {
-        padding: 20px;
-    }
-}
 
 
 .contenedor-login-boton {
@@ -276,4 +262,171 @@ section ul {
 .boton-login:hover {
     background-color: #b61b9c;
 }
+
+@media (max-width: 600px) {
+    h1.titulo-principal {
+        font-size: 1.5rem;
+    }
+
+    h3.subtitulo, h3.subtitulo-secundario {
+        font-size: 1rem;
+    }
+
+    header img, footer .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .login-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    form button, form input[type="submit"] {
+        width: 100%;
+    }
+
+    .boton-login {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.titulo-principal {
+        font-size: 1.4rem;
+    }
+
+    h3.subtitulo, h3.subtitulo-secundario {
+        font-size: 1rem;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    header img, footer .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form, .login-container {
+        padding: 15px;
+    }
+
+    form button, form input[type="submit"],
+    .boton-login {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    .texto-caja {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    h1.titulo-principal {
+        font-size: 1.6rem;
+    }
+
+    h3.subtitulo, h3.subtitulo-secundario {
+        font-size: 1.1rem;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form, .login-container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1.titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .nav-links li {
+        margin: 0 25px;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    h1.titulo-principal {
+        font-size: 2rem;
+    }
+
+    .nav-links li {
+        margin: 0 30px;
+    }
+
+    form, .login-container {
+        padding: 30px;
+    }
+
+    table {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    header, main, section, footer, nav, .contenido-pagina {
+        max-width: 1200px;
+    }
+
+    h1.titulo-principal {
+        font-size: 2.4rem;
+    }
+
+    h3.subtitulo {
+        font-size: 1.6rem;
+    }
+
+    p, li {
+        font-size: 1.1rem;
+    }
+
+    .nav-links li {
+        margin: 0 50px;
+    }
+
+    table {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
 
