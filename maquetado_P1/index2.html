@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estylemaquetado2.css">
+    <link rel="icon" href="imagenes/icono_App_Itsc.png">
+</head>
+
+<body>
+    <header class="header">
+        <img src="imagenes/bannerarriba.jpg" alt="LogoITSC" />
+        <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="Contactos.html">Contactos</a></li>
+            <li><a href="alcance_titulo.html">Alcance de título</a></li>
+            <li><a href="asignaturas.html">Asignaturas</a></li>
+            <li><a href="form.html">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor dividido en texto y login -->
+    <main class="contenedor-principal">
+        <!-- Texto a la izquierda -->
+        <section class="contenido-texto">
+            <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
+            <p>
+                El Técnico Superior en Desarrollo de Software estará capacitado para producir componentes de software, lo
+                que comprende su diseño detallado, construcción, verificación unitaria, depuración, optimización y mantenimiento.
+            </p>
+            <h3 class="subtitulo-secundario">Tecnicatura en Desarrollo de Software</h3>
+            <p>
+                Formate en una de las áreas con mayor demanda del mundo digital. Aprendé a programar, diseñar y mantener aplicaciones modernas.
+            </p>
+        </section>
+
+        <!-- Login a la derecha -->
+        <aside class="login-lateral">
+            <h3 class="subtitulo-secundario">Iniciar Sesión</h3>
+
+            <form action="procesar_login.html" method="post">
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+
+                <div>
+                    <button type="submit">Ingresar</button>
+                </div>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <img src="imagenes/banner.jpg" alt="imagen banner" />
+    </footer>
+
+    <script>
+        function abrirLogin() {
+            window.open(
+                "login.html",
+                "Login",
+                "width=500,height=600,left=100,top=100,resizable=yes,scrollbars=yes"
+            );
+        }
+    </script>
+</body>
+
+
+</html>
+ 
