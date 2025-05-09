@@ -1,11 +1,9 @@
-/* ====== RESET BÁSICO ====== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ESTILO GENERAL DEL CUERPO */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
@@ -13,36 +11,96 @@ body {
     line-height: 1.6;
 }
 
-/* ESTILOS COMUNES PARA CONTENEDORES SEMÁNTICOS */
-header, main, section, footer, nav, .contenido-pagina {
+header,
+.navbar,
+footer {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: #a15795;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer {
+    clear: both;
+}
+
+footer .banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+main:not(.contenido-principal),
+.contenido-pagina {
     width: 90%;
     max-width: 860px;
     margin: 0 auto 25px auto;
     padding: 0 15px;
 }
 
-/* IMAGEN LOGO */
-header img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 860px;
-    border-radius: 10px;
+.pagina-principal-layout {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
 }
 
-/* TITULOS GENERALES */
-h1, h3, h4 {
+.contenido-principal {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.sidebar-login {
+    flex: 1;
+    min-width: 280px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+h1,
+h3,
+h4 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-/* TÍTULO PRINCIPAL */
 h1.titulo-principal {
     font-size: 2rem;
     color: #1a0216;
 }
 
-/* SUBTÍTULOS */
 h3.subtitulo {
     font-size: 1.2rem;
     margin-top: 25px;
@@ -54,18 +112,8 @@ h3.subtitulo-secundario {
     color: #800e6d;
 }
 
-/* TITULO SECUNDARIO */
 h4 {
     color: #b61b9c;
-}
-
-/* BARRA DE NAVEGACIÓN */
-.navbar {
-    background-color: #a15795;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 5px;
 }
 
 .nav-links {
@@ -76,7 +124,7 @@ h4 {
 
 .nav-links li {
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 20px;
 }
 
 .nav-links a {
@@ -89,13 +137,12 @@ h4 {
     color: #e0d216;
 }
 
-/* TEXTOS GENERALES */
-p, li {
+p,
+li {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-/* CAJA DE TEXTO EN INDEX */
 .texto-caja {
     background-color: #ebd5e7;
     border-left: 5px solid #b61b9c;
@@ -103,19 +150,6 @@ p, li {
     border-radius: 5px;
 }
 
-/* BANNER FOOTER */
-footer .banner img {
-    display: block;
-    width: 100%;
-    max-width: 860px;
-    margin: 30px auto;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    object-fit: cover;
-}
-
-/* FORMULARIOS */
 form {
     background-color: #ffffff;
     padding: 25px;
@@ -168,7 +202,8 @@ form input[type="submit"] {
     background-color: #a15795;
     color: white;
     padding: 12px 20px;
-    margin: 12px;
+    margin: 12px auto;
+    display: block;
     border: none;
     border-radius: 6px;
     font-size: 1rem;
@@ -181,23 +216,16 @@ form input[type="submit"]:hover {
     background-color: #b61b9c;
 }
 
-/* LOGIN CONTAINER */
-.login-container {
-    background-color: #ffffff;
-    padding: 30px;
-    max-width: 400px;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.login-container-aside {
+    text-align: left;
 }
 
-.login-container h2 {
+.login-container-aside h3.subtitulo-secundario {
+    text-align: center;
     margin-bottom: 20px;
     color: #a15795;
 }
 
-/* TABLAS */
 table {
     width: 90%;
     margin: 20px auto;
@@ -205,10 +233,11 @@ table {
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px 15px;
     border-bottom: 1px solid #ddd;
     text-align: left;
@@ -223,58 +252,56 @@ table tr:hover {
     background-color: #f2f2f2;
 }
 
-/* SECCIONES GENERALES */
-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-
-    max-width: 860px;
-    margin: 0 auto 25px auto;
-}
-
-/* SECCIONES DE LISTA (por ejemplo, asignaturas) */
 section ul {
     padding-left: 30px;
     list-style-position: outside;
 }
 
+@media (max-width: 768px) {
+    .pagina-principal-layout {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    .contenido-principal {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .sidebar-login {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: unset;
+    }
+}
 
-.contenedor-login-boton {
+.imagen-bajo-formulario {
+    margin-top: 1rem;
     text-align: center;
-    margin: 20px auto;
 }
 
-.boton-login {
-    display: inline-block;
-    background-color: #a15795;
-    color: #fff;
-    padding: 10px 18px;
+.imagen-bajo-formulario img {
+    max-width: 100%;
+    height: auto;
     border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    width: 100%;
 }
 
-.boton-login:hover {
-    background-color: #b61b9c;
-}
+
 
 @media (max-width: 600px) {
     h1.titulo-principal {
         font-size: 1.5rem;
     }
 
-    h3.subtitulo, h3.subtitulo-secundario {
+    h3.subtitulo,
+    h3.subtitulo-secundario {
         font-size: 1rem;
-    }
-
-    header img, footer .banner img {
-        max-width: 100%;
-        height: auto;
     }
 
     table {
@@ -282,19 +309,17 @@ section ul {
         font-size: 0.9rem;
     }
 
-    .login-container {
+    form {
         padding: 20px 15px;
-        margin: 20px auto;
     }
 
-    form button, form input[type="submit"] {
-        width: 100%;
+    .login-container-aside {
+        padding: 20px 15px;
     }
 
-    .boton-login {
+    form button,
+    form input[type="submit"] {
         width: 100%;
-        text-align: center;
-        padding: 12px;
     }
 }
 
@@ -303,27 +328,18 @@ section ul {
         font-size: 1.4rem;
     }
 
-    h3.subtitulo, h3.subtitulo-secundario {
-        font-size: 1rem;
-    }
-
     .nav-links li {
         display: block;
         margin: 8px 0;
     }
 
-    header img, footer .banner img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    form, .login-container {
+    form,
+    .login-container-aside {
         padding: 15px;
     }
 
-    form button, form input[type="submit"],
-    .boton-login {
-        width: 100%;
+    form button,
+    form input[type="submit"] {
         padding: 10px;
         font-size: 0.95rem;
     }
@@ -335,29 +351,8 @@ section ul {
     .texto-caja {
         padding: 15px;
     }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
-    h1.titulo-principal {
-        font-size: 1.6rem;
-    }
-
-    h3.subtitulo, h3.subtitulo-secundario {
-        font-size: 1.1rem;
-    }
-
-    .nav-links li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    form, .login-container {
-        padding: 20px;
-    }
-
-    table {
-        font-size: 0.95rem;
-    }
+    
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -366,67 +361,22 @@ section ul {
     }
 
     .nav-links li {
-        margin: 0 25px;
-    }
-
-    p, li {
-        font-size: 1rem;
-    }
-
-    table {
-        font-size: 1rem;
+        margin: 0 15px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    h1.titulo-principal {
-        font-size: 2rem;
-    }
-
     .nav-links li {
-        margin: 0 30px;
-    }
-
-    form, .login-container {
-        padding: 30px;
-    }
-
-    table {
-        font-size: 1.05rem;
+        margin: 0 20px;
     }
 }
 
 @media (min-width: 1201px) {
-    header, main, section, footer, nav, .contenido-pagina {
-        max-width: 1200px;
-    }
-
     h1.titulo-principal {
         font-size: 2.4rem;
     }
 
-    h3.subtitulo {
-        font-size: 1.6rem;
-    }
-
-    p, li {
-        font-size: 1.1rem;
-    }
-
     .nav-links li {
-        margin: 0 50px;
-    }
-
-    table {
-        font-size: 1.1rem;
+        margin: 0 25px;
     }
 }
-
-
-
-
-
-
-
-
-
