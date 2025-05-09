@@ -63,16 +63,12 @@ main:not(.contenido-principal),
 }
 
 .pagina-principal-layout {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
     max-width: 1200px;
     margin: 0 auto 25px auto;
     padding: 0 15px;
-}
-
-.contenido-principal {
-    flex: 3;
-    margin-right: 20px;
 }
 
 .sidebar-login {
@@ -260,16 +256,16 @@ section ul {
 @media (max-width: 768px) {
     .pagina-principal-layout {
         flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
+        display: block;
     }
+}
 
     .contenido-principal {
         margin-right: 0;
         margin-bottom: 20px;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .sidebar-login {
@@ -278,7 +274,6 @@ section ul {
         margin-right: auto;
         min-width: unset;
     }
-}
 
 .imagen-bajo-formulario {
     margin-top: 1rem;
@@ -327,7 +322,7 @@ section ul {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 40px auto;
     border-radius: 10px;
 }
 
