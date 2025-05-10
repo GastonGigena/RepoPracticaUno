@@ -41,11 +41,12 @@ header img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    
 }
 
 .titulo-principal {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 50px;
     font-size: 2rem;
     color: #333;
     font-weight: bold;
