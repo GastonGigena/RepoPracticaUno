@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcance de titulo</title>
+    <link rel="stylesheet" href="css/estilos_maquetado.css" />
+    <link rel="icon" href="imagenes/icono_App_Itsc.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="imagenes/icono_App_Itsc.png">
+</head>
+
+<body>
+    <div class="container sin-aside">
+
+        <header>
+            <img src="imagenes/bannerarriba.jpg" alt="Logo ITSC" />
+            <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="maquetado.html">Inicio</a></li>
+                <li><a href="alcance.html">Alcance de titulo</a></li>
+                <li><a href="form.html">Formulario</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-centrado">
+            <section>
+
+                <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
+    
+                <h3 class="subtitulo-secundario">Formulario de Contacto</h3>
+    
+    
+                <form action="" method="post">
+                    <div>
+                        <label for="nombre">Ingrese su nombre:</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+    
+                    <div>
+                        <label for="apellido">Ingrese su apellido:</label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+    
+                    <div>
+                        <h4>¿Estudia en la tecnicatura?</h4>
+                        <label for="estudia-si">
+                            <input type="radio" name="estudia" id="estudia-si" value="si"> Sí
+                        </label>
+                        <label for="estudia-no">
+                            <input type="radio" name="estudia" id="estudia-no" value="no"> No
+                        </label>
+                    </div>
+    
+                    <div>
+                        <label for="selector">Año que cursa:</label>
+                        <select name="carrera" id="selector">
+                            <option value="1">Primer Año</option>
+                            <option value="2">Segundo Año</option>
+                            <option value="3">Tercer Año</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="email">Ingrese su correo:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+    
+                    <div>
+                        <h4>¿Cual es su consulta?:</h4>
+                        <textarea name="consulta" id="consulta" rows="5" cols="40"
+                            placeholder="Escriba su consulta aquí..."></textarea>
+                    </div>
+    
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+    
+            </section>
+        </main>
+        <footer>
+
+            <div class="footer-links">
+                <a href="https://villaellibertador.itscordoba.edu.ar/" target="_blank">
+                    <i class="fas fa-globe"></i> Web
+                </a>
+                <a href="https://www.facebook.com/ITSCVaLibertador" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/itsc.softwarevillalibertador/" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://maps.app.goo.gl/trCCKdfRYkhQiQhEA" target="_blank">
+                    <i class="fas fa-location-pin"></i> Ubicación
+                </a>
+                <a href=""><i class="fas fa-clock"></i> Horario: 18:00 Hs. a 22:00 Hs.</a>
+
+            </div>
+            <div class="banner">
+                <img src="imagenes/banner.jpg" alt="imagen banner">
+            </div>
+            <div class="footer-copy">
+                © 2025 Instituto Técnico Superior Córdoba. Todos los derechos reservados.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
