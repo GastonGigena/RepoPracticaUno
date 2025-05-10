@@ -2,35 +2,93 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquetado</title>
-    <link rel="stylesheet" href="css/estilos_maquetado.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio</title>
+  <link rel="stylesheet" href="css/estilos_maquetado.css" />
+  <link rel="icon" href="imagenes/icono_App_Itsc.png" />
 </head>
 
 <body>
+  <div class="container">
 
-    <div class="container">
-
-        <header>
-        <img src="imagenes/bannerarriba.jpg" alt="LogoITSC">
-        <h1>Instituto Técnico Superior Córdoba</h1>
+    <header>
+      <img src="imagenes/bannerarriba.jpg" alt="Logo ITSC" />
+      <h1 class="titulo-principal">Instituto Técnico Superior Córdoba</h1>
     </header>
 
-        <nav>
-            <ul>
-                <li>ITEM 1</li>
-                <li>ITEM 2</li>
-                <li>ITEM 3</li>
-                <li>ITEM 4 </li>
-            </ul>
-        </nav>
+    <nav>
+      <ul>
+        <li><a href="alcance_titulo.html">Alcance de título</a></li>
+        <li><a href="asignaturas.html">Asignaturas</a></li>
+        <li><a href="form.html">Formulario</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
 
-        <section>SECTION</section>
-        <aside>ASIDE</aside>
-        <footer>FOOTER</footer>
-    </div>
+    <section>
+      <h3 class="subtitulo">Tecnicatura Superior en Desarrollo de Software - ITSC Villa El Libertador</h3>
+      <h3 class="subtitulo-secundario">Ser Técnico</h3>
+      <p>El Técnico Superior en Desarrollo de Software estará capacitado para producir componentes de software, lo que
+        comprende su diseño detallado, construcción y realización de verificación unitaria de los mismos, así como su
+        depuración, optimización y mantenimiento; desarrollando las actividades descriptas en el perfil profesional y
+        cumpliendo con los criterios de realización establecidos para las mismas en el marco de un equipo de trabajo
+        organizado por proyecto.</p>
+
+      <h3 class="subtitulo-secundario">Tecnicatura en Desarrollo de Software</h3>
+      <p>Formate en una de las áreas con mayor demanda laboral del mundo digital. Esta tecnicatura te brinda los
+        conocimientos necesarios para diseñar, programar, probar y mantener aplicaciones y sistemas informáticos. A lo
+        largo de la carrera, vas a aprender a trabajar con diversos lenguajes de programación, bases de datos, entornos
+        de desarrollo y herramientas modernas de software.</p>
+      <p>Con un enfoque práctico, orientado a resolver problemas reales, vas a estar preparado para insertarte en el
+        mercado laboral como desarrollador web, programador de sistemas, creador de aplicaciones móviles o incluso
+        emprender tus propios proyectos.</p>
+    </section>
+
+    <aside class="sidebar-login">
+      <section class="login-container-aside">
+        <h3 class="subtitulo-secundario">Iniciar Sesión</h3>
+        <form id="loginFormAside" action="procesar_login.html" method="post">
+          <div>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required />
+          </div>
+          <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required />
+          </div>
+          <div>
+            <button type="submit">Ingresar</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="imagen-bajo-formulario">
+        <a href="https://www.cba.gov.ar/organismo/ministerio-de-educacion/" target="_blank" rel="noopener">
+          <img src="imagenes/logo-ministerio-educacion-e1698184691759-300x135.png" alt="Ministerio de Educación" />
+        </a>
+        <a href="https://www.cba.gov.ar/" target="_blank" rel="noopener">
+          <img src="imagenes/cba-logo.png" alt="Gobierno de Córdoba" />
+        </a>
+      </div>
+    </aside>
+
+    <footer>
+      <img src="imagenes/banner.jpg" alt="Banner inferior" />
+    </footer>
+
+  </div>
+
+  <script>
+    const loginFormAside = document.getElementById("loginFormAside");
+    if (loginFormAside) {
+      loginFormAside.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("¡Login exitoso! Redirigiendo a la página principal...");
+        window.location.reload();
+      });
+    }
+  </script>
 </body>
 
 </html>
