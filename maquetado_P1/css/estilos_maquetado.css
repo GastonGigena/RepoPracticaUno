@@ -1,38 +1,88 @@
-.caja{
-    border: 2px solid black;
-    margin: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-.header{
-    background-color: lightblue;
-    height: 300px;
-    grid-column: 1 / 5;
+header {
+    grid-area: header;
+}
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.nav{
+nav {
     background-color: lightslategray;
-    height: 40px;
-    grid-column: 1 / 5;
+
+    grid-area: nav;
 }
 
-.section{
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+    margin: 10px;
+}
+
+section {
     background-color: lightcoral;
     height: 600px;
-    grid-column: 1 / 4;
+    grid-area: section;
+
 }
 
-.aside{
+aside {
     background-color: lightgreen;
     height: 600px;
-    grid-column: 4 / 5;
+    grid-area: aside;
+
 }
 
-.footer{
+footer {
     background-color: rgb(82, 79, 79);
     height: 100px;
-    grid-column: 1 / 5;
+    grid-area: footer;
+
 }
 
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    padding: 1rem;
+
+}
+
+@media (max-width: 1023px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "aside"
+            "section"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        grid-auto-flow: row;
+    }
+
+}
+
+sidebar {
+    display: none;
+}
