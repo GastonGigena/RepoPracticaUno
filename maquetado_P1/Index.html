@@ -118,8 +118,11 @@
         if (loginFormAside) {
             loginFormAside.addEventListener("submit", function (e) {
                 e.preventDefault();
-                alert("¡Login exitoso! Redirigiendo a la página principal...");
-                window.location.reload();
+                
+                const nombreUsuario = document.getElementById("usuario").value;
+                alert("¡Hola, " + nombreUsuario + "! Login exitoso. Redirigiendo a la página principal...");
+                
+                window.location.reload(); // o window.location.href = "Index.html";
             });
         }
     </script>
