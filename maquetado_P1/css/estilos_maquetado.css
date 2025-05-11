@@ -1,6 +1,5 @@
-/* ===============================
-   Estilos Globales
-   =============================== */
+/*Estilos Generales*/
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
@@ -11,9 +10,9 @@ body {
     box-sizing: border-box;
 }
 
-/* ===============================
-   Estructura del Layout (Grid)
-   =============================== */
+
+/*Grid)*/
+
 .container {
     display: grid;
     grid-template-areas:
@@ -41,7 +40,7 @@ header img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    
+
 }
 
 .titulo-principal {
@@ -52,9 +51,9 @@ header img {
     font-weight: bold;
 }
 
-/* ===============================
-   Navegación
-   =============================== */
+
+/* Nav*/
+
 nav {
     grid-area: nav;
     background-color: #a15795;
@@ -87,9 +86,9 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ===============================
-   Sección Principal y Aside
-   =============================== */
+
+/*Section y Aside*/
+
 section {
     grid-area: section;
     background-color: #ffffff;
@@ -136,11 +135,8 @@ section {
 }
 
 
+/*Formulario de Login*/
 
-
-/* ===============================
-   Estilos del Formulario de Login
-   =============================== */
 form {
     background-color: #ffffff;
     padding: 25px;
@@ -217,9 +213,8 @@ form input[type="submit"]:hover {
     color: #a15795;
 }
 
-/* ===============================
-   Pie de Página
-   =============================== */
+/*footer */
+
 footer {
     grid-area: footer;
     background-color: #a15795;
@@ -272,27 +267,8 @@ footer .banner img {
 }
 
 
+/*Media Queries*/
 
-
-/*footer {
-    grid-area: footer;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    width: 100%;
-    /* Asegura que ocupe todo el ancho disponible */
-}
-
-/*footer img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* ===============================
-   Media Queries (Responsivos)
-   =============================== */
 @media (max-width: 1023px) {
     .container {
         grid-template-areas:
@@ -310,7 +286,10 @@ footer .banner img {
     }
 }
 
-/* Móviles - hasta 576px */
+
+/* Móviles*/
+
+
 @media (max-width: 576px) {
     .container {
         grid-template-areas:
@@ -339,7 +318,9 @@ footer .banner img {
     }
 }
 
-/* Tabletas - hasta 768px */
+
+/* Tablets*/
+
 @media (max-width: 768px) {
     .container {
         grid-template-areas:
@@ -364,7 +345,9 @@ footer .banner img {
     }
 }
 
-/* Portátiles - hasta 992px */
+
+/* notebooks*/
+
 @media (max-width: 992px) {
     .container {
         grid-template-columns: 1fr;
@@ -385,7 +368,9 @@ footer .banner img {
     }
 }
 
-/* Dispositivos grandes - desde 1200px */
+
+/* PC*/
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
