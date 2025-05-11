@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/estilos_maquetado.css" />
     <link rel="icon" href="imagenes/icono_App_Itsc.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="icon" href="imagenes/icono_App_Itsc.png">
 </head>
 
 <body>
@@ -34,8 +33,7 @@
 
                 <h3 class="subtitulo-secundario">Formulario de Contacto</h3>
 
-
-                <form action="" method="post">
+                <form id="formulario-contacto">
                     <div>
                         <label for="nombre">Ingrese su nombre:</label>
                         <input type="text" name="nombre" id="nombre" required>
@@ -71,7 +69,7 @@
                     </div>
 
                     <div>
-                        <h4>¿Cual es su consulta?:</h4>
+                        <h4>¿Cuál es su consulta?:</h4>
                         <textarea name="consulta" id="consulta" rows="5" cols="40"
                             placeholder="Escriba su consulta aquí..."></textarea>
                     </div>
@@ -81,10 +79,12 @@
                     </div>
                 </form>
 
+                <div id="mensaje-estado" style="margin-top: 10px;"></div>
+
             </section>
         </main>
-        <footer>
 
+        <footer>
             <div class="footer-links">
                 <a href="https://villaellibertador.itscordoba.edu.ar/" target="_blank">
                     <i class="fas fa-globe"></i> Web
@@ -98,17 +98,43 @@
                 <a href="https://maps.app.goo.gl/trCCKdfRYkhQiQhEA" target="_blank">
                     <i class="fas fa-location-pin"></i> Ubicación
                 </a>
-                <a href=""><i class="fas fa-clock"></i> Horario: 18:00 Hs. a 22:00 Hs.</a>
-
+                <a href="#"><i class="fas fa-clock"></i> Horario: 18:00 Hs. a 22:00 Hs.</a>
             </div>
+
             <div class="banner">
                 <img src="imagenes/banner.jpg" alt="imagen banner">
             </div>
+
             <div class="footer-copy">
                 © 2025 Instituto Técnico Superior Córdoba - Prácticas 1 - 2º Año - Gastón Gigena.
             </div>
         </footer>
     </div>
+
+    <!-- SCRIPT PARA ENVIAR A GOOGLE SHEETS -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNq1boHkIV4LF41beCKnphS9l_6iuTODAi3vBCAUTF-GeNmZ50SNcTq4Lzih-q_7WDIA/exec'; // URL del Web App
+
+        const form = document.getElementById('formulario-contacto');
+        const mensajeEstado = document.getElementById('mensaje-estado');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const datos = new FormData(form);
+
+            fetch(scriptURL, { method: 'POST', body: datos })
+                .then(response => {
+                    mensajeEstado.innerHTML = "<p style='color: green;'>Formulario enviado correctamente.</p>";
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    mensajeEstado.innerHTML = "<p style='color: red;'>Ocurrió un error. Intente nuevamente.</p>";
+                });
+        });
+    </script>
+
 </body>
 
 </html>

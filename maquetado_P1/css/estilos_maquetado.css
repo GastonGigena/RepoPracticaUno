@@ -266,6 +266,16 @@ footer .banner img {
     object-fit: cover;
 }
 
+.footer-item {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
 
 /*Media Queries*/
 
