@@ -1,0 +1,11 @@
+.escondido {
+    display: none;
+  }
+  
+  form label,
+  form select,
+  form input {
+    display: block;
+    margin: 10px 0;
+  }
+  

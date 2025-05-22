@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de inscripción</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Formulario de inscripción</h1>
+  <form>
+
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="email">Correo</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="asistencia">Tipo de asistencia</label>
+    <select id="asistencia">
+      <option value="">Seleccione</option>
+      <option value="1">Asistente</option>
+      <option value="2">Ponente</option>
+      <option value="3">Patrocinador</option>
+    </select>
+
+    <
+    <div id="bloqueTema" class="escondido">
+      <label for="tema">Seleccione un tema</label>
+      <select id="tema">
+        <option value="">Seleccione</option>
+        <option value="js">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="otro">Otro</option>
+      </select>
+
+
+      <div id="otroTema" class="escondido">
+        <label for="temaPersonalizado">Especifique el tema</label>
+        <input type="text" id="temaPersonalizado" />
+      </div>
+    </div>
+
+
+    <div id="bloquePatrocinio" class="escondido">
+      <label for="patrocinio">Tipo de patrocinio</label>
+      <select id="patrocinio">
+        <option value="">Seleccione</option>
+        <option value="oro">Oro</option>
+        <option value="plata">Plata</option>
+        <option value="bronce">Bronce</option>
+      </select>
+    </div>
+
+  </form>
+</body>
+</html>
