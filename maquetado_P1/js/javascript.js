@@ -30,24 +30,30 @@ document.body.appendChild(imagen);
 
 
 
-function suma (a,b){
-    return a + b
-}
+let num1 = Number(prompt("Ingrese un valor"));
+let num2 = Number(prompt("Ingrese otro número"));
 
- console.log(suma(3,10))
+let opcion = Number(prompt("Elija una opción:\n1 - Suma\n2 - Resta\n3 - Multiplicación\n4 - División"));
 
-
- let a = 2
- let b = 3
-
-let num1 = Number(prompt("Ingrese un valor"))
-let num2 = Number(prompt("ingrese otro numero"))
-
-let opcion =Number(prompt("opcion 1 - Suma / opcion 2 - Resta / opcion 3 - multiplicar / opcion 4 - dividir"))
-
-switch (opcion){
-    case 1 :
-        alert (num1)
+switch (opcion) {
+    case 1:
+        alert("Resultado de la suma: " + (num1 + num2));
+        break;
+    case 2:
+        alert("Resultado de la resta: " + (num1 - num2));
+        break;
+    case 3:
+        alert("Resultado de la multiplicación: " + (num1 * num2));
+        break;
+    case 4:
+        if (num2 !== 0) {
+            alert("Resultado de la división: " + (num1 / num2));
+        } else {
+            alert("No se puede dividir por cero.");
+        }
+        break;
+    default:
+        alert("Opción inválida");
 }
 
 
