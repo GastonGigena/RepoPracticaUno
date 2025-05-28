@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
+    
     <link rel="stylesheet" href="css/estilos_maquetado.css" />
     <link rel="icon" href="imagenes/icono_App_Itsc.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -118,10 +119,10 @@
         if (loginFormAside) {
             loginFormAside.addEventListener("submit", function (e) {
                 e.preventDefault();
-                
+
                 const nombreUsuario = document.getElementById("usuario").value;
                 alert("¡Hola, " + nombreUsuario + "! Gracias por ingresar a nuestro sitio");
-                
+
                 window.location.reload();
             });
         }
