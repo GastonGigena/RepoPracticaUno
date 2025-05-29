@@ -134,6 +134,13 @@ section {
     width: 100%;
 }
 
+/*selector Formulario de contacto*/
+
+#selector-container {
+    display: none;
+}
+
+
 
 /*Formulario de Login*/
 

@@ -54,7 +54,7 @@
                         </label>
                     </div>
 
-                    <div>
+                    <div id="selector-container">
                         <label for="selector">Año que cursa:</label>
                         <select name="carrera" id="selector">
                             <option value="1">Primer Año</option>
@@ -115,8 +115,7 @@
 
     <!-- SCRIPT PARA ENVIAR A GOOGLE SHEETS -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNq1boHkIV4LF41beCKnphS9l_6iuTODAi3vBCAUTF-GeNmZ50SNcTq4Lzih-q_7WDIA/exec'; // URL del Web App
-
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNq1boHkIV4LF41beCKnphS9l_6iuTODAi3vBCAUTF-GeNmZ50SNcTq4Lzih-q_7WDIA/exec';
         const form = document.getElementById('formulario-contacto');
         const mensajeEstado = document.getElementById('mensaje-estado');
 
@@ -127,13 +126,43 @@
 
             fetch(scriptURL, { method: 'POST', body: datos })
                 .then(response => {
-                    mensajeEstado.innerHTML = "<p style='color: green;'>Formulario enviado correctamente.</p>";
+                    mostrarMensaje("Formulario enviado correctamente.", "green");
                     form.reset();
                 })
                 .catch(error => {
                     console.error('Error:', error);
-                    mensajeEstado.innerHTML = "<p style='color: red;'>Ocurrió un error. Intente nuevamente.</p>";
+                    mostrarMensaje("Ocurrió un error. Intente nuevamente.", "red");
                 });
+        });
+
+        function mostrarMensaje(texto, color) {
+            mensajeEstado.innerHTML = `<p style="color: ${color};">${texto}</p>`;
+
+            // Desaparecer mensaje luego de 5 segundos (5000 milisegundos)
+            setTimeout(() => {
+                mensajeEstado.innerHTML = "";
+            }, 5000);
+        }
+    </script>
+
+    <!--script formulario -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const estudiaSi = document.getElementById('estudia-si');
+            const estudiaNo = document.getElementById('estudia-no');
+            const selectorContainer = document.getElementById('selector-container');
+
+            function toggleSelector() {
+                if (estudiaSi.checked) {
+                    selectorContainer.style.display = 'block';
+                } else {
+                    selectorContainer.style.display = 'none';
+                }
+            }
+
+            estudiaSi.addEventListener('change', toggleSelector);
+            estudiaNo.addEventListener('change', toggleSelector);
         });
     </script>
 
